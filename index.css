@@ -180,7 +180,7 @@ header .logo {
   visibility: hidden;
   opacity: 0;
 }
-.active {
+.trailer.active {
   visibility: visible;
   opacity: 1;
 }
