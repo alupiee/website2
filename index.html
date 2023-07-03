@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Chainsaw Man | Landing Page</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><img src="https://telegra.ph/file/d277e20b6cd615e9cb764.png"></a>
+    <ul class="navigation">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Characters</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search"/>
+      <ion-icon name="search-outline"></ion-icon>
+    </div>
+  </header>
+  <div class="banner">
+    <img src="https://telegra.ph/file/80a5d82407d27657a6a41.jpg" class="bg" alt="background">
+    <div class="content">
+      <img src="https://telegra.ph/file/ceb938eeeb8b05280c5f6.png" class="movieTitle">
+      <h4>
+        <span>2022</span>
+        <span><i>18+</i></span>
+        <span>Action, Horror</span>
+      </h4>
+      <p>Chainsaw Man adalah serial manga Jepang yang ditulis dan diilustrasikan oleh Tatsuki Fujimoto. dan diserialkan di majalah Weekly Shonen Jump Shueisha dari Desember 2018 hingga Desember 2020, dengan bab-babnya dikumpulkan dalam sebelas volume tankōbon.</p>
+      <div class="button">
+        <a href="#"><ion-icon name="play-circle-outline"></ion-icon>Trailer</a>
+        <a href="j"><ion-icon name="add-outline"></ion-icon>More Info</a>
+      </div>
+    </div>
+    <a id="myToggle" class="play" onclick="toggleVideo()"><img src="https://telegra.ph/file/4d27a89d193f844265cf5.png">Watch Trailer</a>
+  </div>
+  <div class="trailer">
+    <video src="trailer.mp4" controls="true" autoplay="true"></video>
+    <img src="https://telegra.ph/file/612833ba6c37e72d7de2f.png" class="close" onclick="toggleVideo()">
+  </div>
+  <script>
+    function toggleVideo() {
+      document.getElementById("myToggle").classlist.toggle("active");
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
